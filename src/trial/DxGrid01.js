@@ -7,7 +7,8 @@ function DxGrid01() {
   const [dataGrid, setDataGrid] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://jsonplaceholder.typicode.com/posts`)
+    // axios.get(`http://jsonplaceholder.typicode.com/posts`)
+    axios.get(`http://localhost:8080/api/cake`)
       .then(res => {
         console.log(res);
         setDataGrid(res.data);
@@ -27,10 +28,14 @@ function DxGrid01() {
         showBorders={true}
       >
         <GroupPanel visible={true} />
-        <Column dataField="userId" dataType="string" />
+        {/* <Column dataField="userId" dataType="string" />
         <Column dataField="id" dataType="string" />
         <Column dataField="title" dataType="string" />
-        <Column dataField="body" dataType="string" />
+        <Column dataField="body" dataType="string" /> */}
+        <Column dataField="id_cake" dataType="string" />
+        <Column dataField="cake_name" dataType="string" />
+        <Column dataField="stock" dataType="number" />
+        <Column dataField="price" dataType="number" />
       </DataGrid>
     </div>
   )

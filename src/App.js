@@ -1,15 +1,15 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/page/Home';
-import About from './components/page/About';
-import Contact from './components/page/Contact';
-import Post from './components/page/Post';
+// import { BrowserRouter, Route, Switch } from 'react-router-dom';
+// import Navbar from './components/Navbar';
+// import Home from './components/page/Home';
+// import About from './components/page/About';
+// import Contact from './components/page/Contact';
+// import Post from './components/page/Post';
 import './index.css';
 // import TodoContainer from './trial/todo/TodoContainer';
 // import './App.css';
 // import CakeContainer from './trial/shopcake/CakeContainer';
-// import DxGrid01 from './trial/DxGrid01';
+import DxGrid01 from './trial/DxGrid01';
 // import ClassCounter from './hook/ClassCounter';
 // import HookCounter from './hook/HookCounter';
 // import HookCounterTwo from './hook/HookCounterTwo';
@@ -42,7 +42,7 @@ import './index.css';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
 // import Message from './components/Message';
-   import Counter from './components/codevolution/Counter';
+//  import Counter from './components/codevolution/Counter';
 // import ParentComponent from './components/ParentComponent';
 // import UserGreeting from './components/UserGreeting';
 // import NameList from './components/NameList';
@@ -76,19 +76,19 @@ import './index.css';
 function App() {
   return (
     // <div className="App">
-    <BrowserRouter>
+    // <BrowserRouter>
       <div>
-        <Navbar />
+        {/* <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
           <Route path='/counter' component={Counter} />
           <Route path='/:post_id' component={Post} />
-        </Switch>
+        </Switch> */}
         {/* <TodoContainer /> */}
         {/* <CakeContainer /> */}
-        {/* <DxGrid01 /> */}
+        <DxGrid01 />
         {/* <Emailto /> */}
         {/* <DataFetching /> */}
         {/* <MouseContainer /> */}
@@ -103,7 +103,7 @@ function App() {
         {/* <HookCounterThree /> */}
         {/* <HookCounterFour /> */}
       </div>
-    </BrowserRouter>
+    // </BrowserRouter>
 
     // <Provider store={store}>
     //   <div className="App">
